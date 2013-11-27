@@ -1,0 +1,88 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flan.study"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.flan.study.activity.MainActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.flan.study.activity.PinYinActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="com.flan.study.service.ServiceActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="com.flan.study.service.AidlServiceActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="com.flan.study.broadcastreceiver.BroadcastActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="com.flan.study.intent.IntentActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="com.flan.study.intent.IntentResultActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter >
+                <action android:name="com.flan.study.intent.ACTION_START"/>
+                <!-- 当Activity用 action方式启动时，一定要配置category，不然无法启动 -->
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.flan.study.drawable.DrawableActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="com.flan.study.drawable.SimpleBitMapActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="com.flan.study.drawable.MyViewActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        
+        
+        <service android:name="com.flan.study.service.SimpleService" android:exported="false">
+            <intent-filter >
+                <action android:name="com.flan.study.SIMPLE_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.flan.study.service.BindService" >
+        </service>
+        <service android:name="com.flan.study.service.AidlService" >
+        </service>
+        
+        <receiver android:name="com.flan.study.broadcastreceiver.MyReceiver" android:exported="false">
+            <intent-filter >
+                <action android:name="com.flan.study.broadcastreceiver.MYRECEICER"/>
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

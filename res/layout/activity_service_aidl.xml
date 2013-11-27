@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    
+    <Button 
+        android:id="@+id/service_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_bind"/>
+    
+    <Button 
+        android:id="@+id/service_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_state"/>
+    
+    <Button 
+        android:id="@+id/service_ubind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_ubind"/>
+    
+    <TextView 
+        android:id="@+id/service_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E43834"
+        android:textColor="#000000"/>
+
+</LinearLayout>

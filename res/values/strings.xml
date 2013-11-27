@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="app_name">StudyDemo</string>
+    
+    <string name="pinyin_but">获取首字母</string>
+    <string name="pinyin_hint">输入汉字</string>
+    
+    <string name="service_start">启动服务</string>
+    <string name="service_end">结束服务</string>
+    <string name="service_bind">绑定服务</string>
+    <string name="service_state">获取状态</string>
+    <string name="service_ubind">解绑服务</string>
+    
+    <string name="broadcast_normal">发送普通广播</string>
+    <string name="broadcast_order">发送有序广播</string>
+    
+    <string name="intent_comp">Component启动</string>
+    <string name="intent_action">Action 启动</string>
+    <string name="intent_filter">Filter 启动</string>
+    
+    <string name="broadcast_send">发送广播</string>
+    
+    <string name="drawable_simple">使用简单图片</string>
+    <string name="drawable_draw">绘图</string>
+    <string name="simple_next">下一张</string>
+
+</resources>
